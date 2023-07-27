@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using ConsoleApp1;
 using Dapper;
 
 //var cancelationToken = new CancellationTokenSource(TimeSpan.FromMinutes(1)).Token;
