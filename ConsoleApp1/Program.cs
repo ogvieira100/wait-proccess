@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Data.SqlClient;
 using System.Threading.Tasks;
+using ConsoleApp1;
+using Dapper;
 
 //var cancelationToken = new CancellationTokenSource(TimeSpan.FromMinutes(1)).Token;
 //cancelationToken.ThrowIfCancellationRequested();
@@ -49,8 +52,8 @@ static List<Task> func()
     list.Add(Task.Run(async() =>
     {
         
-        Console.WriteLine($"vai segurar por minutos 2");
-        System.Threading.Thread.Sleep(TimeSpan.FromMinutes(2));
+        Console.WriteLine($"timeout por minutos 3");
+        System.Threading.Thread.Sleep(TimeSpan.FromMinutes(3));
         if (!executei)
         {
             Console.WriteLine($"não executou reprocessar");
